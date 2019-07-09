@@ -1,6 +1,7 @@
 "use strict"
 
-let text = `One: 'Hi Mary.' Two: 'Oh, hi.'
+let text = `One: 'Hi Mary.'
+            Two: 'Oh, hi.'
             One: 'How are you doing?'
             Two: 'I'm doing alright. How about you?'
             One: 'Not too bad. The weather is great isn't it?'
@@ -17,6 +18,6 @@ let text = `One: 'Hi Mary.' Two: 'Oh, hi.'
             Two: 'I'll see you next time.'
             One: 'Sure. Bye.'`
 
-let editedText = text.replace(/(?![a-z]'[a-z]|s')([\s\S])'|^'/g, '$1"')
+let editedText = text.replace(/(?!s'|[A-Za-z]'[a-z])([\s\S])'|^'/g, '$1"')
 
 console.log(editedText)
