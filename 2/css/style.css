@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+.contacts-form {
+    margin: 50px 0 0 50px;
+    width: 400px;
+    outline: 1px solid grey;
+    padding: 10px;
+}
+
+.contacts-form input {
+    width: 400px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.contacts-form button {
+    width: 400px;
+    padding: 5px;
+}
+
+.contacts-form p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.error {
+    background-color: indianred;
+    transition: .5s;
+}
